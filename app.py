@@ -20,9 +20,9 @@ if st.button("Predict"):
         text_vectorized = vectorizer.transform([processed_text])
         prediction = model.predict(text_vectorized)[0]
         if prediction == 1:
-            sentiment = "Positive"
+            sentiment = "Positive😊"
         elif prediction == -1:
-            sentiment = "Negative"
+            sentiment = "Negative🙅 "
         else:
-            sentiment = "Neutral"
+            sentiment = "Neutral🙃"
         st.success(f"The predicted sentiment is: {sentiment}")
